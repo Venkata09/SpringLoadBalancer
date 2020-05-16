@@ -22,7 +22,7 @@ public class MicroService1Controller {
     @GetMapping("/getmicroservice2")
     public String getMicroService2Instance() {
         String url = "http://microservice1/microservice2/port";
-        String port = "Currently hitting instance running on port: " + restTemplate.getForObject(url, String.class);
+        String port = "Current instance port::::::: " + restTemplate.getForObject(url, String.class);
 
         return port;
     }
